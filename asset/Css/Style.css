@@ -47,24 +47,21 @@ table {
     border-spacing: 0;
 }
 
-/*End_Css_Reset*/
 
-/*Start_Body*/
 body {
     direction: rtl;
     line-height: 1;
 }
 
-/*End_Body*/
-
-/*Start_Header*/
 .header-snap {
     width: 100%;
     background: white;
     display: flex;
     gap: 25px;
     min-height: 96px;
-    padding: 0 10px;
+    align-items: center !important;
+    padding: 0 11%;
+    border-bottom: 2px solid #e5e5e5;
 }
 
 .wrapper-menu-header-snap {
@@ -73,20 +70,46 @@ body {
     gap: 25px;
 }
 
-/*Start_item_style*/
-.item-menu-header-snap {
-
-
-a {
+.item-menu-header-snap a {
     color: black;
     text-decoration: none;
 }
 
-}
-/*End_Item_Style*/
 .submenu-header-snap {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /*padding: 15px;*/
+    padding: 15px;
+}
+
+.item-menu-header-snap {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.submenu-header-snap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    padding: 15px;
+    top: 20px;
+    width: 200px;
+    visibility: hidden;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.item-menu-header-snap:hover .submenu-header-snap {
+    visibility: visible;
+    opacity: 1;
+}
+
+.item-menu-header-snap > svg {
+    transform: scale(0.6) rotate(90deg);
+    margin-top: 5px;
 }
