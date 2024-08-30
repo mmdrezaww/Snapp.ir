@@ -27,6 +27,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
     line-height: 1;
+    direction: rtl;
+    font-family: 'iransans', 'sans-serif';
 }
 
 ol, ul {
@@ -53,6 +55,7 @@ body {
     line-height: 1;
 }
 
+/*Start_Header*/
 .header-snap {
     width: 100%;
     background: white;
@@ -60,8 +63,13 @@ body {
     gap: 25px;
     min-height: 96px;
     align-items: center !important;
-    padding: 0 11%;
-    border-bottom: 2px solid #e5e5e5;
+    padding: 0 11.5%;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo-snap-header {
+    position: relative;
+    top: -8px;
 }
 
 .wrapper-menu-header-snap {
@@ -71,21 +79,8 @@ body {
 }
 
 .item-menu-header-snap a {
-    color: black;
+    color: #3f3f3f;
     text-decoration: none;
-}
-
-.submenu-header-snap {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-}
-
-.item-menu-header-snap {
-    display: flex;
-    flex-direction: row;
-    position: relative;
 }
 
 .submenu-header-snap {
@@ -94,14 +89,21 @@ body {
     gap: 10px;
     position: absolute;
     padding: 15px;
-    top: 20px;
-    width: 200px;
+    top: 30px;
+    width: 140px;
     visibility: hidden;
     transition: 0.3s all ease-in-out;
     opacity: 0;
     border: 1px solid #dedede;
     border-radius: 10px;
     background: #fff;
+
+}
+
+.item-menu-header-snap {
+    display: flex;
+    flex-direction: row;
+    position: relative;
 }
 
 .item-menu-header-snap:hover .submenu-header-snap {
@@ -109,7 +111,90 @@ body {
     opacity: 1;
 }
 
+.item-menu-header-snap .submenu-snap-item a {
+    width: 100%;
+    display: flex;
+    padding: 8px 0;
+}
+
 .item-menu-header-snap > svg {
     transform: scale(0.6) rotate(90deg);
     margin-top: 5px;
+    transition: 0.3s all ease-in-out;
 }
+
+.item-menu-header-snap:hover > svg {
+    transform: scale(0.6) rotate(270deg);
+}
+
+.item-menu-header-snap .submenu-snap-item a:hover {
+    color: #00d16f;
+    font-weight: 150;
+}
+
+/*End_Header*/
+
+/*Start_Section*/
+.first-section-snap-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.inner-right-box-snap, .inner-left-box-snap {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.inner-right-box-snap {
+    background: #21aa58;
+    color: white;
+    padding-right: 11.5%;
+    padding-left: ;
+}
+
+.wrapper-img-box-first-snap {
+    display: flex;
+    margin: 0;
+}
+
+.wrapper-img-box-first-snap > img {
+    max-height: 455px;
+    transform: scaleX(-1);
+}
+
+.main-title-snap {
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+.main-desc-snap {
+    font-size: 20px;
+    padding: 16px 0;
+    line-height: 1.5;
+}
+
+/*End_Section*/
+/*End_Css_Code*/
+
+
+/*/Fonts/*/
+@font-face {
+    font-family: iransans;
+    src: url("../Fonts/fa-Iran-sans-web-bold.woff2");
+    font-weight: bold;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: iransans;
+    src: url("../Fonts/fa-Iran-sans-web-light.woff2");
+    font-weight: normal;
+    font-display: fallback;
+}
+
+/*/End_Fonts/*/
