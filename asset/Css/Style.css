@@ -134,6 +134,7 @@ body {
 
 /*End_Header*/
 
+
 /*Start_Section*/
 .first-section-snap-wrapper {
     display: flex;
@@ -152,8 +153,8 @@ body {
 .inner-right-box-snap {
     background: #21aa58;
     color: white;
-    padding-right: 11.5%;
-    padding-left: ;
+    padding: 35px 15% 35px 35px;
+
 }
 
 .wrapper-img-box-first-snap {
@@ -178,11 +179,49 @@ body {
     line-height: 1.5;
 }
 
+.inner-right-box-snap form {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+}
+
+#mobile_phone {
+    text-align: right;
+    font-size: 21px;
+    padding: 3px;
+    font-family: 'iransans', sans-serif;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.inner-right-box-snap form button {
+    background-color: #fff;
+    border: none;
+    min-width: 120px;
+    color: #00d16f;
+    font-family: 'iransans', sans-serif;
+    font-size: 100%;
+    border-radius: 6px;
+}
+
+.btn-first-section-to-app-snap {
+    border: 1px solid #fff;
+    width: fit-content;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
 /*End_Section*/
-/*End_Css_Code*/
 
 
-/*/Fonts/*/
+
+/*/Start_Fonts/*/
 @font-face {
     font-family: iransans;
     src: url("../Fonts/fa-Iran-sans-web-bold.woff2");
