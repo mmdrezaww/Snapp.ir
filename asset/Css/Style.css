@@ -134,13 +134,13 @@ body {
 
 /*End_Header*/
 
-
-/*Start_Section*/
+/*Start_Section1*/
 .first-section-snap-wrapper {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .inner-right-box-snap, .inner-left-box-snap {
@@ -196,6 +196,11 @@ body {
     border-bottom: 1px solid #fff;
 }
 
+.inner-right-box-snap form input#mobile_phone::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
 .inner-right-box-snap form button {
     background-color: #fff;
     border: none;
@@ -217,9 +222,37 @@ body {
     margin: 10px 0 0 0;
 }
 
-/*End_Section*/
+/*End_Section1*/
 
+/*Start_Section2*/
 
+.second-section-snap-wrapper {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 15%;
+    gap: 30px;
+}
+
+.link-download-app-snap > img {
+    width: 160px;
+}
+
+/*End_Section2*/
+
+/*Start_Section3*/
+.third-section-snap-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 50px 15%;
+    background: #f2f5f8;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*End_Section3*/
 
 /*/Start_Fonts/*/
 @font-face {
