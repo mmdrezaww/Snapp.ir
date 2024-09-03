@@ -252,6 +252,54 @@ body {
     align-items: center;
 }
 
+.title-third-section-snap {
+    color: #404040;
+    padding: 0 0 50px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.item-features-snap {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 18px;
+    background: #fff;
+    padding: 15px 8px;
+    text-decoration: none;
+}
+
+.item-features-snap > img {
+    width: 62px;
+    height: 62px;
+}
+
+.box-titles-feature-snap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box-titles-feature-snap > h3 {
+    font-size: 16px;
+    color: #3f3f3f;
+    font-weight: bold;
+}
+
+.box-titles-feature-snap > p {
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+.bottom-third-section-snap {
+    width: 100%;
+    display: grid;
+    flex-wrap: wrap;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 /*End_Section3*/
 
 /*/Start_Fonts/*/
