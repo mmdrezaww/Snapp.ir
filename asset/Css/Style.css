@@ -90,6 +90,7 @@ body {
     position: absolute;
     padding: 15px;
     top: 30px;
+    font-size: 100%;
     width: 140px;
     visibility: hidden;
     transition: 0.3s all ease-in-out;
@@ -131,8 +132,6 @@ body {
     color: #00d16f;
     font-weight: 150;
 }
-
-/*End_Header*/
 
 /*Start_Section1*/
 .first-section-snap-wrapper {
@@ -222,8 +221,6 @@ body {
     margin: 10px 0 0 0;
 }
 
-/*End_Section1*/
-
 /*Start_Section2*/
 
 .second-section-snap-wrapper {
@@ -238,8 +235,6 @@ body {
 .link-download-app-snap > img {
     width: 160px;
 }
-
-/*End_Section2*/
 
 /*Start_Section3*/
 .third-section-snap-wrapper {
@@ -300,7 +295,19 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/*End_Section3*/
+/*Slider*/
+
+.fourth-section-snap-wrapper {
+    display: block;
+    box-sizing: border-box;
+    padding-right: max(140px, 15%);
+    padding-left: max(140px, 15%);
+    margin-top: 40px;
+    height: 351px;
+    padding-top: 40px;
+    border-radius: 20px !important;
+    margin-bottom: 32px
+}
 
 /*/Start_Fonts/*/
 @font-face {
@@ -316,5 +323,3 @@ body {
     font-weight: normal;
     font-display: fallback;
 }
-
-/*/End_Fonts/*/
